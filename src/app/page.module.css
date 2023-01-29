@@ -1,10 +1,11 @@
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-
+@font-face {
+  font-family: "body-text";
+  src: url("../app/fonts/Akkurat-Mono.OTF");
 }
 
-@media (prefers-reduced-motion) {
-
+@font-face {
+  font-family: "heading-text";
+  src: url("../app/fonts/Inter-Regular.ttf");
 }
 
 /* Mobile and Tablet */
@@ -54,6 +55,13 @@
   .mission_container h1 {
     padding-bottom: 1rem;
     text-transform: capitalize;
+    font-family: "heading-text";
+    font-weight: lighter;
+  }
+
+  .mission_container h5 {
+    font-family: "body-text";
+    font-weight: lighter;
   }
 
   .about_container h5 {
@@ -71,6 +79,11 @@
   .services_list li {
     padding-left: 1rem;
     padding-bottom: 0.5rem;
+  }
+
+  .li h1 {
+    font-family: "body-text";
+    font-weight: lighter;
   }
 
   /*misc elements*/
@@ -97,3 +110,10 @@
 
 }
 
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+@media (prefers-reduced-motion) {
+
+}
